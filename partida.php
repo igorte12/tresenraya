@@ -45,7 +45,7 @@ if ($result->num_rows == 0) {
 
 ?>
 
-<h3>Partida <?php echo $idpartida; ?></h3>
+<h3>Partida <span id="idpartida"></span><?php echo $idpartida; ?></h3>
 <div class="container">
     <div id="jugador1"><?php echo $jugador1; ?></div>
     <div id="tablero">
