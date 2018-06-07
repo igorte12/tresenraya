@@ -1,0 +1,19 @@
+.container{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+#tablero{
+    width: 600px;
+    height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.celda{
+    width: 198px;
+    height: 198px;
+    border:1px solid black;
+}
