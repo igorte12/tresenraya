@@ -19,6 +19,5 @@ if(isset($_SESSION["iduser"])){
     <link rel="stylesheet" href="css/style.css">
   <!-- <meta http-equiv="refreh" content="10">       refrescar pagina cada 10 segundos -->
     <title>Juego del Tres en raya</title>
-    <!-- <script src="js.js"></script> -->
+    <script src="partida.js"></script>
 </head>
-<body>
