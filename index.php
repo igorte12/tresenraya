@@ -1,8 +1,6 @@
 <?php
 include 'cabecera.php';
-if(isset($_SESSION["nombre"])){
-    header("Location:juegos.php");
-}
+
 
 if ($_POST) {
     $nombre = $_POST["nombre"];
@@ -14,8 +12,10 @@ if ($_POST) {
         $error="Error en el usuario o contraseña";
     }else{
         $resultado = $result->fetch_array();
-        $_SESSION["iduser"]=$resultado["id"];
+        $_SESSION['iduser']=$resultado['id'];
         $_SESSION["nombre"]=$resultado["nombre"];
+      
+      
         header('Location: juegos.php');
     }  
 }

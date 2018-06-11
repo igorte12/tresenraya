@@ -1,10 +1,9 @@
 <?php
-
 session_start();
 $mysqli = new mysqli("localhost", "root", "", "tresenraya");
 
 if(isset($_SESSION["iduser"])){
-    $iduser=$_SESSION["iduser"];
+    $iduser = $_SESSION["iduser"];
 }
 
 

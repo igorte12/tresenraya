@@ -1,6 +1,7 @@
 <?php
 include 'cabecera.php';
 
+
 if ($_GET) {
     if (isset($_GET["act"])) {
         $accion = $_GET["act"];
@@ -22,7 +23,7 @@ if ($_GET) {
     }
 }
 //Partidas en espera
-$consulta = "select nombre,partidas.id from partidas,usuario where resultado=0 and partidas.iduser1=usuario.id and iduser2=0";
+$consulta = "select nombre,partidas.id from partidas,usuario where resultado=0 and partidas.iduser1=usuario.id and iduser2 is null";
 $result = $mysqli->query($consulta);
 
 $tabla = "";
