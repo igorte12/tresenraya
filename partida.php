@@ -1,5 +1,6 @@
 <?php
 include 'cabeceraPartida.php';
+include 'redirlogin.php';
 
 if (isset($_GET["id"])) {
     $idpartida = $_GET["id"];
@@ -47,6 +48,7 @@ echo $_SESSION["nombre"];
 <h3>Partida <span id="idpartida"><?php echo $idpartida; ?></span></h3>
 <div class="container">
     <div id="jugador1"><?php echo $jugador1; ?></div>
+    <div id="jugador2"><?php echo $jugador2; ?></div>
     <div id="tablero">
         <div id="c0" class="celda"></div>
         <div id="c1" class="celda"></div>
@@ -58,7 +60,7 @@ echo $_SESSION["nombre"];
         <div id="c7" class="celda"></div>
         <div id="c8" class="celda"></div>
     </div>
-    <div id="jugador2"><?php echo $jugador2; ?></div>
+
 </div>
 </body>
 </html>

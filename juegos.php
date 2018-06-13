@@ -1,6 +1,6 @@
 <?php
 include 'cabecera.php';
-
+include 'redirlogin.php';
 
 if ($_GET) {
     if (isset($_GET["act"])) {

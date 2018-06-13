@@ -80,3 +80,16 @@ if (isset($_GET["idpart"])) {
         echo json_encode($obj);
     }
 }
+
+if (isset($_GET["result"])) {
+    $resultado=$_GET["result"];
+    $idpartida=$_GET["idpartida"];
+    $consulta="UPDATE partidas SET resultado = $resultado WHERE id = $idpartida";
+    $result = $mysqli->query($consulta);
+    if($result){
+        echo "ok";
+    }
+    else{
+        echo "no ok";
+    }
+}
